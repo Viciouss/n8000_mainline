@@ -16,8 +16,9 @@
     * reserved (see los kernel p4-input.c line 122)
 * version 8
     * same as 0.7
-* version 9
+* version 9+
     * LTE model such as N8020 (does this also include the N8015?)
+    * my N8020 is revision b
 
 # ADC
 
