@@ -1,4 +1,4 @@
-state.Midas {
+state.p4note {
 	control.1 {
 		iface MIXER
 		name 'AIF1.1 DRC'
