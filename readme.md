@@ -100,3 +100,21 @@
     * *sec_jack.c*
     * device detection via **adc channel 4**
 
+# Sensors
+
+* Compass: AKM AK8975C
+   * supported by mainline ("asahi-kasei,ak8975" -> https://github.com/torvalds/linux/blob/master/drivers/iio/magnetometer/ak8975.c)
+   * i2c10 - reg 0x0C
+* Light Sensor #1: ROHM BH1721FVC
+   * supported by mainline ("rohm,bh1721" -> https://github.com/torvalds/linux/blob/master/drivers/iio/light/bh1750.c)
+   * i2c9 - reg 0x23
+* Light Sensor #2: LIGHTON AL3201
+   * not yet in mainline
+   * i2c9 - reg 0x1c
+* Acceleration Sensor: STM LSM330DLC
+   * supported in mainline ("st,lsm330dlc-accel" -> https://github.com/torvalds/linux/blob/master/drivers/iio/accel/st_accel_i2c.c)
+   * i2c1 - accel: 0x19
+* Gyrometer: STM LSM330DLC
+   * supported in mainline ("st,lsm330dlc-gyro" -> https://github.com/torvalds/linux/blob/master/drivers/iio/gyro/st_gyro_i2c.c)
+   * i2c1 - gyro: 0x6b
+   
